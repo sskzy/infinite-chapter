@@ -16,7 +16,4 @@ public interface IRule {
 
     // 特殊规则
     Double specialRule();
-
-    // 获取规则时长
-    Double getRuleTime();
 }

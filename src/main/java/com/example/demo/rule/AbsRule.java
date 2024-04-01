@@ -1,10 +1,22 @@
 package com.example.demo.rule;
 
+import com.example.demo.service.KindRuleService;
+import com.example.demo.service.TypeRuleService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * @author : songtc
  * @since : 2024/03/29 17:59
  */
+@Component
 public abstract class AbsRule implements IRule {
+
+    @Autowired
+    protected KindRuleService kindRuleService;
+
+    @Autowired
+    protected TypeRuleService typeRuleService;
 
     @Override
     public Double prefixRule() {
