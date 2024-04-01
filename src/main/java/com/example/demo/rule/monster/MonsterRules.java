@@ -9,7 +9,7 @@ import com.example.demo.rule.AbsRule;
 public abstract class MonsterRules extends AbsRule {
 
     // 怪物固定时长
-    public Double fixedTime() {
+    private Double fixedTime() {
         return 1.0;
     }
 

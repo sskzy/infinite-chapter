@@ -25,9 +25,4 @@ public abstract class AbsRule implements IRule {
     public Double specialRule() {
         return 1.0;
     }
-
-    @Override
-    public Double getRuleTime() {
-        return prefixRule() * specialRule() * adjectivesRule() * specialRule();
-    }
 }

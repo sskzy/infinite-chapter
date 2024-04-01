@@ -8,23 +8,13 @@ import com.example.demo.rule.AbsRule;
  */
 public abstract class RoleRules extends AbsRule {
     // 角色面板规则
-    public Double rolePanelRule() {
-        return 1.0;
-    }
-
-    // 角色技能规则
-    public Double roleSkillRule() {
-        return 1.0;
-    }
-
-    // 角色装备规则
-    public Double roleEquipmentRule() {
+    private Double rolePanelRule() {
         return 1.0;
     }
 
     @Override
     public Double getRuleTime() {
-        // 人物基础面板加成 * 法术规则时长 * 装备规则时长
-        return this.rolePanelRule() * this.roleSkillRule() * this.roleEquipmentRule();
+        // 人物基础面板加成
+        return this.rolePanelRule();
     }
 }
